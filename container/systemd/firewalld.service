@@ -1,6 +1,6 @@
 [Unit]
 Description=firewall daemon container with system dbus
-Documentation=https://github.com/thkukuk/firewalld-container
+Documentation=https://github.com/openSUSE/firewalld-container
 After=network-online.target
 Wants=network-online.target
 After=dbus.service

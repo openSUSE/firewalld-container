@@ -117,4 +117,4 @@ There are two ways to build a firewalld container:
 
 ## Reporting bugs
 
-Please report bugs as [github issue](https://github.com/thkukuk/firewalld-container/issues)
+Please report bugs in [Bugzilla](https://bugzilla.suse.com/)
