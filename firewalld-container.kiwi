@@ -13,7 +13,7 @@
       image="docker"
       derived_from="obsrepositories:/opensuse/busybox#latest">
       <containerconfig
-        name="firewalld"
+        name="suse/alp/workloads/firewalld"
         tag="latest"
         additionaltags="%PKG_VERSION%,%PKG_VERSION%-%RELEASE%"
         maintainer="Arvin Schnell &lt;aschnell@suse.com&gt;">
@@ -36,7 +36,12 @@
             <label name="org.opencontainers.image.version" value="%PKG_VERSION%-%RELEASE%"/>
             <label name="org.opencontainers.image.created" value="%BUILDTIME%"/>
 	    <label name="org.opencontainers.image.url" value="https://github.com/openSUSE/firewalld-container"/>
+	    <label name="com.suse.eula" value="beta" />
+	    <label name="com.suse.image-type" value="application" />
+	    <label name="com.suse.release-stage" value="prototype" />
             <label name="org.openbuildservice.disturl" value="%DISTURL%"/>
+	    <label name="org.opensuse.reference"
+		   value="registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld-%PKG_VERSION%-%RELEASE%"/>
           </suse_label_helper:add_prefix>
         </labels>
         <history author="Thorsten Kukuk &lt;kukuk@suse.com&gt;">firewalld container</history>
