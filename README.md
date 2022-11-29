@@ -23,7 +23,7 @@ The container image provides four runlabels:
 ### Initialize the system
 
 ```
-# podman container runlabel install registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld
+# podman container runlabel install registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld
 ```
 
 Will prepare the system. The following files will be created on the host OS:
@@ -50,7 +50,7 @@ systemd if podman is used as container runtime.
 To run the firewall container with the label `RUN`:
 
 ```
-# podman container runlabel run registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld
+# podman container runlabel run registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld
 ```
 
 This command will run the container as privileged container with host
@@ -66,13 +66,13 @@ To stop the container: `systemctl stop firewalld`
 #### manual
 
 ```
-# podman run -d --rm --network host --privileged -v /run/dbus/system_bus_socket:/run/dbus/system_bus_socket -v /etc/firewalld:/etc/firewalld --name firewalld registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld:latest
+# podman run -d --rm --network host --privileged -v /run/dbus/system_bus_socket:/run/dbus/system_bus_socket -v /etc/firewalld:/etc/firewalld --name firewalld registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld:latest
 ```
 
 ### De-install the files
 
 ```
-# podman container runlabel uninstall registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld
+# podman container runlabel uninstall registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld
 ```
 
 Will remove all generated files except the configuration files.
@@ -99,13 +99,13 @@ Or with the `/usr/local/bin/firewall-cmd` wrapper.
 The manual page for `firewalld` can be read with:
 
 ```
-# podman run -it --rm registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld man firewalld
+# podman run -it --rm registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld man firewalld
 ```
 
 or for the `firewall-cmd` client:
 
 ```
-# podman run -it --rm registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld man firewall-cmd
+# podman run -it --rm registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld man firewall-cmd
 ```
 
 ## Building containers

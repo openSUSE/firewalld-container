@@ -41,7 +41,7 @@
 	    <label name="com.suse.release-stage" value="prototype" />
             <label name="org.openbuildservice.disturl" value="%DISTURL%"/>
 	    <label name="org.opensuse.reference"
-		   value="registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld:%PKG_VERSION%-%RELEASE%"/>
+		   value="registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld:%PKG_VERSION%-%RELEASE%"/>
           </suse_label_helper:add_prefix>
         </labels>
         <history author="Thorsten Kukuk &lt;kukuk@suse.com&gt;">firewalld container</history>

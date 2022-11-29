@@ -14,7 +14,7 @@ Environment=PODMAN_SYSTEMD_UNIT=%n
 Restart=on-failure
 RestartSec=1s
 TimeoutStopSec=70
-Environment=FIREWALLD_IMAGE_PATH=registry.opensuse.org/suse/alp/workloads/tumbleweed_containerfiles/suse/alp/workloads/firewalld:latest
+Environment=FIREWALLD_IMAGE_PATH=registry.opensuse.org/suse/alp/workloads/tumbleweed_images/suse/alp/workloads/firewalld:latest
 Environment=CONFIG_DIR=/etc/firewalld
 EnvironmentFile=-/usr/etc/default/container-firewalld
 EnvironmentFile=-/etc/default/container-firewalld
